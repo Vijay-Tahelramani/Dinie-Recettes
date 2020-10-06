@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="120dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/ingre_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredients"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ingre_item_name"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_quantity_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_value_hint"
+                style="@style/AccentTextInputLayoutStyle"
+                android:layout_weight="4">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/add_quantity_edt_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/AccentTextInputEditTextStyle"
+                    android:textSize="18sp"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/colorLightGrey"
+                    android:maxLength="4"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_quantity_unit_layout"
+                style="@style/TextInputAutoCompleteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/quantity_type_hint"
+                app:layout_constraintTop_toBottomOf="@+id/add_category_selection_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_weight="6">
+
+                <AutoCompleteTextView
+                    style="@style/AccentTextInputEditTextStyle"
+                    android:id="@+id/add_quantity_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</TableRow>

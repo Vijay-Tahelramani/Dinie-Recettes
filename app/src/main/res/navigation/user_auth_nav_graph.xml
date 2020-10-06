@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_auth_nav_graph"
+    app:startDestination="@id/defaultFragment">
+
+    <fragment
+        android:id="@+id/defaultFragment"
+        android:name="com.example.dinierecettes.DefaultFragment"
+        android:label="fragment_default"
+        tools:layout="@layout/fragment_default" >
+        <action
+            android:id="@+id/action_defaultFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+        <action
+            android:id="@+id/action_defaultFragment_to_signup1Fragment"
+            app:destination="@id/signup1Fragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.dinierecettes.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPassword1Fragment"
+            app:destination="@id/forgotPassword1Fragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signup1Fragment"
+        android:name="com.example.dinierecettes.Signup1Fragment"
+        android:label="fragment_signup1"
+        tools:layout="@layout/fragment_signup1" >
+        <action
+            android:id="@+id/action_signup1Fragment_to_signup2Fragment"
+            app:destination="@id/signup2Fragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signup2Fragment"
+        android:name="com.example.dinierecettes.Signup2Fragment"
+        android:label="fragment_signup2"
+        tools:layout="@layout/fragment_signup2" >
+        <action
+            android:id="@+id/action_signup2Fragment_to_signup3Fragment"
+            app:destination="@id/signup3Fragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signup3Fragment"
+        android:name="com.example.dinierecettes.Signup3Fragment"
+        android:label="fragment_signup3"
+        tools:layout="@layout/fragment_signup3" >
+        <action
+            android:id="@+id/action_signup3Fragment_to_signup4Fragment"
+            app:destination="@id/signup4Fragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signup4Fragment"
+        android:name="com.example.dinierecettes.Signup4Fragment"
+        android:label="fragment_signup4"
+        tools:layout="@layout/fragment_signup4" >
+        <action
+            android:id="@+id/action_signup4Fragment_to_signup5Fragment"
+            app:destination="@id/signup5Fragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signup5Fragment"
+        android:name="com.example.dinierecettes.Signup5Fragment"
+        android:label="fragment_signup5"
+        tools:layout="@layout/fragment_signup5" >
+        <action
+            android:id="@+id/action_signup5Fragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"
+            app:popUpTo="@id/defaultFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassword1Fragment"
+        android:name="com.example.dinierecettes.ForgotPassword1Fragment"
+        android:label="fragment_forgot_password1"
+        tools:layout="@layout/fragment_forgot_password1" >
+        <action
+            android:id="@+id/action_forgotPassword1Fragment_to_forgotPassword2Fragment"
+            app:destination="@id/forgotPassword2Fragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassword2Fragment"
+        android:name="com.example.dinierecettes.ForgotPassword2Fragment"
+        android:label="fragment_forgot_password2"
+        tools:layout="@layout/fragment_forgot_password2" >
+        <action
+            android:id="@+id/action_forgotPassword2Fragment_to_forgotPassword3Fragment"
+            app:destination="@id/forgotPassword3Fragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassword3Fragment"
+        android:name="com.example.dinierecettes.ForgotPassword3Fragment"
+        android:label="fragment_forgot_password3"
+        tools:layout="@layout/fragment_forgot_password3" >
+        <action
+            android:id="@+id/action_forgotPassword3Fragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"
+            app:popUpTo="@id/defaultFragment"
+            app:popUpToInclusive="true"/>/>
+    </fragment>
+</navigation>

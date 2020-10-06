@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" >
+
+        <item android:id="@+id/edit_profile_drawer"
+            android:title="@string/edit_profile"
+            android:icon="@drawable/edit_icon"/>
+
+        <item android:id="@+id/your_recipes_drawer"
+            android:title="@string/ur_recipe"
+            android:icon="@drawable/your_recipes_icon"/>
+
+        <item android:id="@+id/your_cb_drawer"
+            android:title="@string/ur_cb"
+            android:icon="@drawable/cookbook"/>
+
+        <item android:id="@+id/offline_recipe_drawer"
+            android:title="@string/offline_recipe"
+            android:icon="@drawable/offline_recipe"/>
+
+        <item android:id="@+id/history_drawer"
+            android:title="@string/history"
+            android:icon="@drawable/history_icon"/>
+
+        <item android:id="@+id/delete_account_drawer"
+            android:title="@string/delete_acc"
+            android:icon="@drawable/delete_acc_icon"/>
+
+        <item android:id="@+id/logout_drawer"
+            android:title="@string/log_out"
+            android:icon="@drawable/logout_icon"/>
+
+    </group>
+
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_child_nav_graph"
+    app:startDestination="@id/explore_recipe_fragment">
+
+    <fragment
+        android:id="@+id/explore_recipe_fragment"
+        android:name="com.example.dinierecettes.explore_recipes_fragment"
+        android:label="fragment_explore_fragment"
+        tools:layout="@layout/fragment_explore_recipes" />
+    <fragment
+        android:id="@+id/category_fragment"
+        android:name="com.example.dinierecettes.category_fragment"
+        android:label="fragment_category_fragment"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/cuisine_Fragment"
+        android:name="com.example.dinierecettes.Cuisine_Fragment"
+        android:label="fragment_cuisine"
+        tools:layout="@layout/fragment_cuisine" />
+
+</navigation>
